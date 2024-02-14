@@ -24,11 +24,15 @@ export default function App() {
         </Typography>
 
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Design Process
+          Prototype Design Documentation
         </Typography>
-
+        <Typography variant="body1" align="left" sx={{ mb: 5 }}>
+          This is the first interactive prototype deployment of Elevator Pitch.
+          The following documentation will provide a detailed look into
+          prototypes developed along the way.
+        </Typography>
         <PrototypeResult />
-    
+
         <Copyright />
       </Box>
     </Container>
