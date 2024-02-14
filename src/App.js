@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import PrototypeResult from "./PrototypeResult";
 import SceneFlow from "./SceneFlow";
+import SplashExperience from "./SplashExperience";
 
 function Copyright() {
   return (
@@ -18,7 +19,7 @@ function Copyright() {
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
         <Typography variant="h2" component="h1" sx={{ mb: 5 }}>
           Elevator Pitch Deployment #1
@@ -35,6 +36,8 @@ export default function App() {
         <PrototypeResult />
 
         <SceneFlow />
+
+        <SplashExperience />
 
         <Copyright />
       </Box>
