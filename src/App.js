@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import PrototypeResult from "./PrototypeResult";
+import SceneFlow from "./SceneFlow";
 
 function Copyright() {
   return (
@@ -32,6 +33,8 @@ export default function App() {
           prototypes developed along the way.
         </Typography>
         <PrototypeResult />
+
+        <SceneFlow />
 
         <Copyright />
       </Box>
