@@ -20,10 +20,10 @@ export default function SplashExperience() {
           alt="prototype result"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: "VerveAlt"}}>
             Lo-fi Splash Experience Prototype #1
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
             This prototype shows how we want our opening scene to look like. It
             helps show what kind of animations and color schemes we would like
             to implement in the actual game. We also considered what to include
@@ -58,10 +58,10 @@ export default function SplashExperience() {
           alt="another prototype"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: "VerveAlt"}}>
             Lo-fi Splash Experience Prototype #2
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
             For this splash experience, we wanted to focus more on guiding the
             player and giving them more context not only about the story/world
             they are in but also instructing the player on what the objective

@@ -20,10 +20,10 @@ export default function PrototypeResult() {
           alt="prototype result"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: "VerveAlt" }}>
             Lo-fi Push-and-Pull Mechanic Result #1
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
             The GIF above depicts an interactive prototype developed in Unity.
             You can see the player's pull movement towards the orange cylinder
             on the screen. As the player moves towards the object, the player's
@@ -40,10 +40,10 @@ export default function PrototypeResult() {
           alt="another prototype"
         />
         <CardContent >
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: "VerveAlt" }}>
             Lo-fi Push-and-Pull Mechanic Result #2
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
             The GIF above depicts a Unity prototype with the player's utilization of the walls and
             orange cylinder to progress further in the game. As the player pulls
             themselves towards the orange cylinder, their gravity is rotated
