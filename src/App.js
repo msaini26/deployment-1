@@ -6,6 +6,7 @@ import Link from "@mui/material/Link";
 import PrototypeResult from "./PrototypeResult";
 import SceneFlow from "./SceneFlow";
 import SplashExperience from "./SplashExperience";
+import "./fade.css";
 
 // font importing
 import "./font.css";
@@ -18,9 +19,26 @@ import "./fonts/Titania-Regular.ttf";
 import "./fonts/Book.otf";
 import "./fonts/Chopper.ttf";
 
+const gradientColors = [
+  "hsla(24, 100%, 50%, 1) 10%",
+  "hsla(37, 100%, 48%, 1) 37%",
+  "hsla(45, 100%, 50%, 1) 69%",
+  "hsla(60, 100%, 50%, 1) 100%",
+];
+
+const gradientStyle = {
+  background: `linear-gradient(135deg, ${gradientColors.join(", ")})`,
+  border: "none",
+  color: "#fff",
+  padding: "10px 20px",
+  borderRadius: "5px",
+  cursor: "pointer",
+  fontSize: "16px",
+};
+
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography variant="body2" color="text.secondary" align="center" sx={{fontFamily: "VerveAlt"}}>
       {"Copyright © "}
       Elevator Pitch {new Date().getFullYear()}
       {"."}
@@ -28,11 +46,31 @@ function Copyright() {
   );
 }
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <Container maxWidth="md">
+      <FadeInSection>
       <Box sx={{ my: 4 }}>
-        <Typography variant="h2" component="h1" sx={{ mb: 5, fontFamily: "VerveRegular"}}>
+        <Typography className="blink" variant="h2" component="h1" sx={{ mb: 5, fontFamily: "VerveRegular"}}>
           Elevator Pitch Deployment #1
         </Typography>
 
@@ -52,6 +90,7 @@ export default function App() {
 
         <Copyright />
       </Box>
+      </FadeInSection>
     </Container>
   );
 }

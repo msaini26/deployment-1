@@ -9,6 +9,23 @@ import { Button, CardActionArea, CardActions, Stack } from "@mui/material";
 import elevator from "./assets/elevator.png";
 import elevatorTwo from "./assets/elevator2.png";
 
+const gradientColors = [
+  "hsla(24, 100%, 50%, 1) 10%",
+  "hsla(37, 100%, 48%, 1) 37%",
+  "hsla(45, 100%, 50%, 1) 69%",
+  "hsla(60, 100%, 50%, 1) 100%",
+];
+
+const gradientStyle = {
+  background: `linear-gradient(135deg, ${gradientColors.join(", ")})`,
+  border: "none",
+  color: "#fff",
+  padding: "10px 20px",
+  borderRadius: "5px",
+  cursor: "pointer",
+  fontSize: "16px",
+};
+
 export default function SplashExperience() {
   return (
     <Stack spacing={2} direction="column" sx={{ mb: 5 }}>
@@ -42,6 +59,7 @@ export default function SplashExperience() {
         </CardContent>
         <CardActions>
           <Button
+          style={gradientStyle}
             size="medium"
             href="https://docs.google.com/presentation/d/1KeAFnGHqhnmGRMcILBtH0Q_eFOqnS4ww0UTovrFcXVI/edit?usp=sharing"
           >
@@ -74,6 +92,7 @@ export default function SplashExperience() {
         </CardContent>
         <CardActions>
           <Button
+          style={gradientStyle}
             size="medium"
             href="https://docs.google.com/presentation/d/1LCjqDY8Ir3v4ui2sQAnvHZahFNn-bjr8w1r-V_HJ8ws/edit?usp=sharing"
           >
