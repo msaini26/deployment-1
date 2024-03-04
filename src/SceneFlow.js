@@ -9,7 +9,6 @@ import { Button, CardActionArea, CardActions, Stack } from "@mui/material";
 import sceneFlowOne from "./assets/Scene Flow.png";
 import sceneFlowTwo from "./assets/Scene Flow Prototype 2.png";
 
-
 function LightBulbIcon(props) {
   return (
     <SvgIcon {...props}>
@@ -35,7 +34,6 @@ const gradientStyle = {
   fontSize: "16px",
 };
 
-
 export default function SceneFlow() {
   return (
     <Stack spacing={2} direction="column" sx={{ mb: 5 }}>
@@ -47,10 +45,19 @@ export default function SceneFlow() {
           alt="prototype result"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: "VerveAlt"}}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ fontFamily: "VerveAlt" }}
+          >
             Scene Flow Lo-fi Prototype #1
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ fontFamily: "Chop" }}
+          >
             The Figma scene flow prototype, which was created in Figma, shows
             the gameplay loops as if the elevator was not the main core
             component of the game. The elevator is mainly used as a means to
@@ -69,7 +76,8 @@ export default function SceneFlow() {
         </CardContent>
         <CardActions>
           <Button
-          style={gradientStyle}
+            sx={{ fontFamily: "Chop" }}
+            style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/hJwAMEw4vAEteGg13QZVST/Scene-Flow-Prototype-1?type=whiteboard&node-id=0%3A1&t=e1mznuJ6DbGly71K-1"
           >
@@ -86,10 +94,19 @@ export default function SceneFlow() {
           alt="another prototype"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: "VerveAlt"}}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ fontFamily: "VerveAlt" }}
+          >
             Scene Flow Lo-fi Prototype #2
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ fontFamily: "Chop" }}
+          >
             This scene flow FigJam prototype explains the core gameplay logic as
             if the elevator was the core root of the game itself. Essentially,
             the player can run back into the elevator at any point during the
@@ -117,7 +134,8 @@ export default function SceneFlow() {
         </CardContent>
         <CardActions>
           <Button
-          style={gradientStyle}
+            sx={{ fontFamily: "Chop" }}
+            style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/To9jX7TeacyNwx92G6ZzRV/Scene-Flow-Prototype-2?type=whiteboard&node-id=1%3A2&t=LZdU8L6tSAib1JnV-1"
           >

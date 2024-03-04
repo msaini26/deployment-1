@@ -59,6 +59,7 @@ export default function SplashExperience() {
         </CardContent>
         <CardActions>
           <Button
+          sx={{fontFamily: "Chop"}}
           style={gradientStyle}
             size="medium"
             href="https://docs.google.com/presentation/d/1KeAFnGHqhnmGRMcILBtH0Q_eFOqnS4ww0UTovrFcXVI/edit?usp=sharing"
@@ -93,6 +94,7 @@ export default function SplashExperience() {
         <CardActions>
           <Button
           style={gradientStyle}
+          sx={{fontFamily: "Chop"}}
             size="medium"
             href="https://docs.google.com/presentation/d/1LCjqDY8Ir3v4ui2sQAnvHZahFNn-bjr8w1r-V_HJ8ws/edit?usp=sharing"
           >
