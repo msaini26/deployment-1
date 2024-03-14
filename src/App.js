@@ -19,15 +19,9 @@ import "./fonts/Titania-Regular.ttf";
 import "./fonts/Book.otf";
 import "./fonts/LTSoul-Regular.otf";
 
-const gradientColors = [
-  "hsla(24, 100%, 50%, 1) 10%",
-  "hsla(37, 100%, 48%, 1) 37%",
-  "hsla(45, 100%, 50%, 1) 69%",
-  "hsla(60, 100%, 50%, 1) 100%",
-];
 
 const gradientStyle = {
-  background: `linear-gradient(135deg, ${gradientColors.join(", ")})`,
+  background: `#8B0000`,
   border: "none",
   color: "#fff",
   padding: "10px 20px",

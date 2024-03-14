@@ -17,15 +17,9 @@ function LightBulbIcon(props) {
   );
 }
 
-const gradientColors = [
-  "hsla(24, 100%, 50%, 1) 10%",
-  "hsla(37, 100%, 48%, 1) 37%",
-  "hsla(45, 100%, 50%, 1) 69%",
-  "hsla(60, 100%, 50%, 1) 100%",
-];
 
 const gradientStyle = {
-  background: `linear-gradient(135deg, ${gradientColors.join(", ")})`,
+  background: `#8B0000`,
   border: "none",
   color: "#fff",
   padding: "10px 20px",
@@ -76,7 +70,8 @@ export default function SceneFlow() {
         </CardContent>
         <CardActions>
           <Button
-            sx={{ fontFamily: "Soul" }}
+          variant="contained"
+            sx={{ fontFamily: "Soul", textTransform: "none", }}
             style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/hJwAMEw4vAEteGg13QZVST/Scene-Flow-Prototype-1?type=whiteboard&node-id=0%3A1&t=e1mznuJ6DbGly71K-1"
@@ -134,7 +129,8 @@ export default function SceneFlow() {
         </CardContent>
         <CardActions>
           <Button
-            sx={{ fontFamily: "Soul" }}
+          variant="contained"
+            sx={{ fontFamily: "Soul", textTransform: "none",}}
             style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/To9jX7TeacyNwx92G6ZzRV/Scene-Flow-Prototype-2?type=whiteboard&node-id=1%3A2&t=LZdU8L6tSAib1JnV-1"
