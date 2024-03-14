@@ -18,7 +18,7 @@ import "./fonts/Titania-Shadow.ttf";
 import "./fonts/Titania-Regular.ttf";
 import "./fonts/Book.otf";
 import "./fonts/LTSoul-Regular.otf";
-
+import { createTheme } from "@mui/material";
 
 const gradientStyle = {
   background: `#8B0000`,
