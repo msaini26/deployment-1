@@ -55,8 +55,8 @@ export default function SceneFlow() {
           </Typography>
           <Typography
             variant="body2"
-            color="text.secondary"
-            sx={{ fontFamily: "Chop" }}
+            color="text.primary"
+            sx={{ fontFamily: "Soul" }}
           >
             The Figma scene flow prototype, which was created in Figma, shows
             the gameplay loops as if the elevator was not the main core
@@ -76,7 +76,7 @@ export default function SceneFlow() {
         </CardContent>
         <CardActions>
           <Button
-            sx={{ fontFamily: "Chop" }}
+            sx={{ fontFamily: "Soul" }}
             style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/hJwAMEw4vAEteGg13QZVST/Scene-Flow-Prototype-1?type=whiteboard&node-id=0%3A1&t=e1mznuJ6DbGly71K-1"
@@ -104,8 +104,8 @@ export default function SceneFlow() {
           </Typography>
           <Typography
             variant="body2"
-            color="text.secondary"
-            sx={{ fontFamily: "Chop" }}
+            color="text.primary"
+            sx={{ fontFamily: "Soul" }}
           >
             This scene flow FigJam prototype explains the core gameplay logic as
             if the elevator was the core root of the game itself. Essentially,
@@ -134,7 +134,7 @@ export default function SceneFlow() {
         </CardContent>
         <CardActions>
           <Button
-            sx={{ fontFamily: "Chop" }}
+            sx={{ fontFamily: "Soul" }}
             style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/To9jX7TeacyNwx92G6ZzRV/Scene-Flow-Prototype-2?type=whiteboard&node-id=1%3A2&t=LZdU8L6tSAib1JnV-1"

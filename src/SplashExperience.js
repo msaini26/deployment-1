@@ -40,7 +40,7 @@ export default function SplashExperience() {
           <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: "VerveAlt"}}>
             Lo-fi Splash Experience Prototype #1
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
+          <Typography variant="body2" color="text.primary" sx={{ fontFamily: "Soul" }}>
             This prototype shows how we want our opening scene to look like. It
             helps show what kind of animations and color schemes we would like
             to implement in the actual game. We also considered what to include
@@ -59,7 +59,7 @@ export default function SplashExperience() {
         </CardContent>
         <CardActions>
           <Button
-          sx={{fontFamily: "Chop"}}
+          sx={{fontFamily: "Soul"}}
           style={gradientStyle}
             size="medium"
             href="https://docs.google.com/presentation/d/1KeAFnGHqhnmGRMcILBtH0Q_eFOqnS4ww0UTovrFcXVI/edit?usp=sharing"
@@ -80,7 +80,7 @@ export default function SplashExperience() {
           <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: "VerveAlt"}}>
             Lo-fi Splash Experience Prototype #2
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ fontFamily: "Chop" }}>
+          <Typography variant="body2" color="text.primary" sx={{ fontFamily: "Soul" }}>
             For this splash experience, we wanted to focus more on guiding the
             player and giving them more context not only about the story/world
             they are in but also instructing the player on what the objective
@@ -94,7 +94,7 @@ export default function SplashExperience() {
         <CardActions>
           <Button
           style={gradientStyle}
-          sx={{fontFamily: "Chop"}}
+          sx={{fontFamily: "Soul"}}
             size="medium"
             href="https://docs.google.com/presentation/d/1LCjqDY8Ir3v4ui2sQAnvHZahFNn-bjr8w1r-V_HJ8ws/edit?usp=sharing"
           >

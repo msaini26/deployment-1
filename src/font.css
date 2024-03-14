@@ -40,3 +40,8 @@
     font-family: 'Chop';
     src: url('./fonts/Chopper.ttf');
 }
+
+@font-face {
+    font-family: 'Soul';
+    src: url('./fonts/LTSoul-Regular.otf');
+}

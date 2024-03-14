@@ -17,7 +17,7 @@ import "./fonts/Titania-Outline.ttf";
 import "./fonts/Titania-Shadow.ttf";
 import "./fonts/Titania-Regular.ttf";
 import "./fonts/Book.otf";
-import "./fonts/Chopper.ttf";
+import "./fonts/LTSoul-Regular.otf";
 
 const gradientColors = [
   "hsla(24, 100%, 50%, 1) 10%",
@@ -38,7 +38,7 @@ const gradientStyle = {
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" sx={{fontFamily: "VerveAlt"}}>
+    <Typography variant="body2" color="text.primary" align="center" sx={{fontFamily: "VerveAlt"}}>
       {"Copyright © "}
       Elevator Pitch {new Date().getFullYear()}
       {"."}
@@ -70,14 +70,14 @@ export default function App() {
     <Container maxWidth="md">
       <FadeInSection>
       <Box sx={{ my: 4 }}>
-        <Typography className="blink" variant="h2" component="h1" sx={{ mb: 5, fontFamily: "VerveRegular"}}>
-          Elevator Pitch Deployment #1
+        <Typography variant="h2" component="h1" sx={{ mb: 5, fontFamily: "VerveRegular"}}>
+          Elevator Pitch Archival Website
         </Typography>
 
         <Typography variant="h4" component="h1" sx={{ mb: 2, fontFamily: "VerveAlt" }}>
           Prototype Design Documentation
         </Typography>
-        <Typography variant="body1" align="left" sx={{ mb: 5, fontFamily: "Chop"}}>
+        <Typography variant="body1" align="left" sx={{ mb: 5, fontFamily: "Soul"}}>
           This is the first interactive prototype deployment of Elevator Pitch.
           The following documentation will provide a detailed look into
           prototypes developed along the way.
