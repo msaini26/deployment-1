@@ -7,6 +7,9 @@ import PrototypeResult from "./PrototypeResult";
 import SceneFlow from "./SceneFlow";
 import SplashExperience from "./SplashExperience";
 import "./fade.css";
+import { Button } from "@mui/material";
+import ElevatorPitch from "./assets/Elevator_Pitch_Prototype.zip";
+
 
 // font importing
 import "./font.css";
@@ -28,6 +31,24 @@ const gradientStyle = {
   borderRadius: "5px",
   cursor: "pointer",
   fontSize: "16px",
+};
+
+// function will download a zip file of elevator pitch prototype
+const downloadPrototype = () => {
+  // using js fetch method to download elevator pitch zip file
+  fetch(ElevatorPitch).then((response) => {
+    response.blob().then((blob) => {
+      // Creating new object of PDF file
+      const fileURL = window.URL.createObjectURL(blob);
+
+      // Setting various property values
+      let alink = document.createElement("a");
+      alink.href = fileURL;
+      alink.download = "Elevator_Pitch.zip";
+      alink.click();
+      console.log("Downloading Elevator Pitch prototype...");
+    });
+  });
 };
 
 function Copyright() {
@@ -68,8 +89,63 @@ export default function App() {
           Elevator Pitch Archival Website
         </Typography>
 
+        {/* download game here */}
+        <Typography
+            variant="body1"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Chop", letterSpacing: "3px" }}
+          >
+            Welcome to Elevator Pitch! Click the download button below to
+            download the interactive Unity prototype of Elevator Pitch.
+          </Typography>
+          <Typography
+            variant="body2"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Chop", letterSpacing: "3px" }}
+          >
+            1. Click the download button below to download the interactive Unity
+            prototype of Elevator Pitch.
+            <br></br>
+            <strong>
+              <i>
+                Note: It may take a second to download depending on your
+                internet speed.
+              </i>
+            </strong>
+            <br></br>
+            <br></br>
+            2. Unzip the downloaded folder.
+            <br></br>
+            <br></br>
+            3. Open the unzipped folder and double click on the{" "}
+            <strong>
+              <code>Elevator Pitch.exe </code>
+            </strong>
+            file to run the prototype.
+            <br></br>
+            <br></br>
+            4. Use your mouse or trackpad to experiment in the prototype
+            environment. Enjoy! 🎉
+          </Typography>
+          <Button
+            variant="outlined"
+            sx={{
+              mb: 5,
+              fontSize: "20px",
+              fontFamily: "TitaniaRegular",
+              textTransform: "none",
+            }}
+            onClick={downloadPrototype}
+            value="download"
+            style={gradientStyle}
+          >
+            Download Prototype
+          </Button>
+
+
+        {/* prototype design documentation */}
         <Typography variant="h4" component="h1" sx={{ mb: 2, fontFamily: "VerveAlt" }}>
-          Prototype Design Documentation
+          Vertical Slice Design Documentation
         </Typography>
         <Typography variant="body1" align="left" sx={{ mb: 5, fontFamily: "Soul"}}>
           This is the first interactive prototype deployment of Elevator Pitch.
