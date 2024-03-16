@@ -170,14 +170,15 @@ export default function App() {
             align="left"
             sx={{ mb: 5, fontFamily: "Soul" }}
           >
-            Elevator Pitch is an interactive game (currently in the vertical slice stage), created by Rebecca Zhao,
-            Mansi Saini, Fernando Alcazar, Ashley Perez, and Thanh To in CMPM
-            171 at the University of California, Santa Cruz, where players
-            navigate a series of rooms with distorted gravity effects.
-            Currently, the game documentation you will see here is for the
-            vertical slice of Elevator Pitch. In the following section, you can
-            see a series of videos from our vertical slice that show an example
-            player going through the player experience.
+            Elevator Pitch is an interactive game (currently in the vertical
+            slice stage), created by Rebecca Zhao, Mansi Saini, Fernando
+            Alcazar, Ashley Perez, and Thanh To in CMPM 171 at the University of
+            California, Santa Cruz, where players navigate a series of rooms
+            with distorted gravity effects. Currently, the game documentation
+            you will see here is for the vertical slice of Elevator Pitch. In
+            the following section, you can see a series of videos from our
+            vertical slice that show an example player going through the player
+            experience.
           </Typography>
 
           {/* video walkthrough */}
@@ -216,6 +217,23 @@ export default function App() {
           {/* Localization */}
           <Local />
 
+          <Typography
+            variant="h4"
+            component="h1"
+            sx={{ mb: 2, fontFamily: "VerveAlt" }}
+          >
+            Game Format
+          </Typography>
+          <Typography
+            variant="body1"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Soul" }}
+          >
+            For game format, we designed our game to be easily downloadable for
+            all users with a smaller build size than other games that exist.
+            Also, we included clear directions on how to play the game, so the
+            player can immediately immerse themselves in the vertical slice.
+          </Typography>
           {/* Team Contributions */}
           <TeamContributions />
 
@@ -253,7 +271,6 @@ export default function App() {
           <SceneFlow />
 
           <SplashExperience />
-
 
           <Copyright />
         </Box>
