@@ -10,6 +10,7 @@ import "./fade.css";
 import { Button } from "@mui/material";
 import ElevatorPitch from "./assets/Elevator_Pitch_Prototype.zip";
 import Local from "./Local";
+import Accessibility from "./Accessibility";
 // temp video removal
 // import walkthrough from "./assets/walk.mp4";
 
@@ -25,6 +26,7 @@ import "./fonts/Book.otf";
 import "./fonts/LTSoul-Regular.otf";
 import { createTheme } from "@mui/material";
 import UnityUpdates from "./UnityUpdates";
+import TeamContributions from "./TeamContributions";
 
 const gradientStyle = {
   background: `#8B0000`,
@@ -168,7 +170,7 @@ export default function App() {
             align="left"
             sx={{ mb: 5, fontFamily: "Soul" }}
           >
-            Elevator Pitch is an interactive game, created by Rebecca Zhao,
+            Elevator Pitch is an interactive game (currently in the vertical slice stage), created by Rebecca Zhao,
             Mansi Saini, Fernando Alcazar, Ashley Perez, and Thanh To in CMPM
             171 at the University of California, Santa Cruz, where players
             navigate a series of rooms with distorted gravity effects.
@@ -209,31 +211,13 @@ export default function App() {
           </Typography>
 
           {/* Accessibility */}
-          <Typography
-            variant="h4"
-            component="h1"
-            sx={{ mb: 2, fontFamily: "VerveAlt" }}
-          >
-            Accessibility
-          </Typography>
-          <Typography
-            variant="body1"
-            align="left"
-            sx={{ mb: 5, fontFamily: "Soul" }}
-          >
-            Accessibility is a key consideration in the design of Elevator
-            Pitch. We have designed our game to be accessible to all players,
-            including those with disabilities. We have implemented the following
-            accessibility features in our game:
-            <ul>
-              <i>
-                <li>One handed mode</li>
-                <li>Adjustable game volume</li>
-              </i>
-            </ul>
-          </Typography>
+          <Accessibility />
 
+          {/* Localization */}
           <Local />
+
+          {/* Team Contributions */}
+          <TeamContributions />
 
           {/* prototype design documentation */}
           <Typography
@@ -269,6 +253,7 @@ export default function App() {
           <SceneFlow />
 
           <SplashExperience />
+
 
           <Copyright />
         </Box>
