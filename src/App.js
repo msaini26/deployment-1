@@ -9,7 +9,6 @@ import SplashExperience from "./SplashExperience";
 import "./fade.css";
 import { Button } from "@mui/material";
 import ElevatorPitch from "./assets/Elevator_Pitch_Prototype.zip";
-import ReactPlayer from "react-player";
 // temp video removal
 // import walkthrough from "./assets/walk.mp4";
 
@@ -180,6 +179,52 @@ export default function App() {
 
           {/* video walkthrough */}
           {/* <video width="500" height="300" controls src={walkthrough}></video> */}
+
+          {/* prototype design documentation */}
+          <Typography
+            variant="h4"
+            component="h1"
+            sx={{ mb: 2, fontFamily: "VerveAlt" }}
+          >
+            Design Constraints
+          </Typography>
+
+          <Typography
+            variant="body1"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Soul" }}
+          >
+            Our game was designed under the following externally imposed constraints:
+            <ul>
+              <i><li>Accessibility</li>
+              <li>Localization</li>
+              <li>Game Format</li></i>
+            </ul>
+
+            In the subsequent headings, we will discuss how we addressed these constraints in our game.
+            </Typography>
+
+          {/* Accessibility */}
+          <Typography
+            variant="h4"
+            component="h1"
+            sx={{ mb: 2, fontFamily: "VerveAlt" }}
+          >
+            Accessibility
+          </Typography>
+          <Typography
+            variant="body1"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Soul" }}        >
+            Accessibility is a key consideration in the design of Elevator Pitch. We have designed our game to be accessible to all players, including those with disabilities. We have implemented the following accessibility features in our game:
+            <ul>
+              <i><li>Colorblind mode</li>
+              <li>Subtitles</li>
+              <li>Adjustable game speed</li></i>
+            </ul>
+          </Typography>
+
+
 
           {/* prototype design documentation */}
           <Typography
