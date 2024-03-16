@@ -12,6 +12,7 @@
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/material": "latest",
+    "@vercel/blob": "^0.22.1",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest"

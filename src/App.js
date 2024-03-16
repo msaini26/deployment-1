@@ -182,10 +182,7 @@ export default function App() {
           </Typography>
 
           {/* video walkthrough */}
-          <video width="500" height="300" controls>
-
-            <source src={walkthrough} type="video/mp4"></source>
-          </video>
+          <iframe src="https://player.vimeo.com/video/924202333?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="375" frameborder="0" allow="autoplay; fullscreen; picture-in-picture;" title="Elevator Pitch Walkthrough"></iframe>
 
           {/* prototype design documentation */}
           <Typography
