@@ -9,7 +9,9 @@ import SplashExperience from "./SplashExperience";
 import "./fade.css";
 import { Button } from "@mui/material";
 import ElevatorPitch from "./assets/Elevator_Pitch_Prototype.zip";
-
+import ReactPlayer from "react-player";
+// temp video removal
+// import walkthrough from "./assets/walk.mp4";
 
 // font importing
 import "./font.css";
@@ -22,6 +24,7 @@ import "./fonts/Titania-Regular.ttf";
 import "./fonts/Book.otf";
 import "./fonts/LTSoul-Regular.otf";
 import { createTheme } from "@mui/material";
+import UnityUpdates from "./UnityUpdates";
 
 const gradientStyle = {
   background: `#8B0000`,
@@ -53,7 +56,12 @@ const downloadPrototype = () => {
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.primary" align="center" sx={{fontFamily: "VerveAlt"}}>
+    <Typography
+      variant="body2"
+      color="text.primary"
+      align="center"
+      sx={{ fontFamily: "VerveAlt" }}
+    >
       {"Copyright © "}
       Elevator Pitch {new Date().getFullYear()}
       {"."}
@@ -84,13 +92,17 @@ export default function App() {
   return (
     <Container maxWidth="md">
       <FadeInSection>
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h2" component="h1" sx={{ mb: 5, fontFamily: "VerveRegular"}}>
-          Elevator Pitch Archival Website
-        </Typography>
+        <Box sx={{ my: 4 }}>
+          <Typography
+            variant="h2"
+            component="h1"
+            sx={{ mb: 5, fontFamily: "VerveRegular" }}
+          >
+            Elevator Pitch Archival Website
+          </Typography>
 
-        {/* download game here */}
-        <Typography
+          {/* download game here */}
+          <Typography
             variant="body1"
             align="left"
             sx={{ mb: 5, fontFamily: "Chop", letterSpacing: "3px" }}
@@ -98,11 +110,6 @@ export default function App() {
             Welcome to Elevator Pitch! Click the download button below to
             download the interactive Unity prototype of Elevator Pitch.
           </Typography>
-
-          <Typography>
-            another test
-          </Typography>
-
           <Typography
             variant="body2"
             align="left"
@@ -147,24 +154,69 @@ export default function App() {
             Download Prototype
           </Button>
 
+          {/* Project Overview */}
+          <Typography
+            variant="h4"
+            component="h1"
+            sx={{ mb: 2, fontFamily: "VerveAlt" }}
+          >
+            Project Overview
+          </Typography>
 
-        {/* prototype design documentation */}
-        <Typography variant="h4" component="h1" sx={{ mb: 2, fontFamily: "VerveAlt" }}>
-          Vertical Slice Design Documentation
-        </Typography>
-        <Typography variant="body1" align="left" sx={{ mb: 5, fontFamily: "Soul"}}>
-          This is the first interactive prototype deployment of Elevator Pitch.
-          The following documentation will provide a detailed look into
-          prototypes developed along the way.
-        </Typography>
-        <PrototypeResult />
+          <Typography
+            variant="body1"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Soul" }}
+          >
+            Elevator Pitch is an interactive game, created by Rebecca Zhao,
+            Mansi Saini, Fernando Alcazar, Ashley Perez, and Thanh To, where
+            players navigate a series of rooms with distorted gravity effects.
+            Currently, the game documentation you will see here is for the
+            vertical slice of Elevator Pitch. In the following section, you can
+            see a series of videos from our vertical slice that show an example
+            player going through the player experience.
+          </Typography>
 
-        <SceneFlow />
+          {/* video walkthrough */}
+          {/* <video width="500" height="300" controls src={walkthrough}></video> */}
 
-        <SplashExperience />
+          {/* prototype design documentation */}
+          <Typography
+            variant="h4"
+            component="h1"
+            sx={{ mb: 2, fontFamily: "VerveAlt" }}
+          >
+            Vertical Slice Design Documentation
+          </Typography>
 
-        <Copyright />
-      </Box>
+          <Typography
+            variant="body1"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Soul" }}
+          >
+            This is an example of our game with further shading, color palettes,
+            and design elements included through Unity. The following
+            documentation will provide a detailed look into prototypes developed
+            along the way.
+          </Typography>
+
+          <UnityUpdates />
+          <Typography
+            variant="body1"
+            align="left"
+            sx={{ mb: 5, fontFamily: "Soul" }}
+          >
+            This is the first interactive prototype deployment of Elevator
+            Pitch.
+          </Typography>
+          <PrototypeResult />
+
+          <SceneFlow />
+
+          <SplashExperience />
+
+          <Copyright />
+        </Box>
       </FadeInSection>
     </Container>
   );
