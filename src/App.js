@@ -11,7 +11,6 @@ import { Button } from "@mui/material";
 import ElevatorPitch from "./assets/Elevator_Pitch_Prototype.zip";
 import Local from "./Local";
 import Accessibility from "./Accessibility";
-import walkthrough from "./assets/walkthrough.mp4";
 
 // font importing
 import "./font.css";
@@ -26,6 +25,8 @@ import "./fonts/LTSoul-Regular.otf";
 import { createTheme } from "@mui/material";
 import UnityUpdates from "./UnityUpdates";
 import TeamContributions from "./TeamContributions";
+
+const walkthrough = `${process.env.PUBLIC_URL}/walkthrough.mp4`;
 
 const gradientStyle = {
   background: `#8B0000`,
