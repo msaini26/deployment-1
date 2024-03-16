@@ -100,7 +100,7 @@ export default function App() {
           </Typography>
 
           <Typography>
-            Testing
+            another test
           </Typography>
 
           <Typography
