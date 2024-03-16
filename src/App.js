@@ -169,8 +169,9 @@ export default function App() {
             sx={{ mb: 5, fontFamily: "Soul" }}
           >
             Elevator Pitch is an interactive game, created by Rebecca Zhao,
-            Mansi Saini, Fernando Alcazar, Ashley Perez, and Thanh To, where
-            players navigate a series of rooms with distorted gravity effects.
+            Mansi Saini, Fernando Alcazar, Ashley Perez, and Thanh To in CMPM
+            171 at the University of California, Santa Cruz, where players
+            navigate a series of rooms with distorted gravity effects.
             Currently, the game documentation you will see here is for the
             vertical slice of Elevator Pitch. In the following section, you can
             see a series of videos from our vertical slice that show an example
