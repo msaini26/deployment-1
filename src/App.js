@@ -11,8 +11,7 @@ import { Button } from "@mui/material";
 import ElevatorPitch from "./assets/Elevator_Pitch_Prototype.zip";
 import Local from "./Local";
 import Accessibility from "./Accessibility";
-// temp video removal
-// import walkthrough from "./assets/walk.mp4";
+import walkthrough from "./assets/walkthrough.mp4";
 
 // font importing
 import "./font.css";
@@ -182,7 +181,7 @@ export default function App() {
           </Typography>
 
           {/* video walkthrough */}
-          {/* <video width="500" height="300" controls src={walkthrough}></video> */}
+          <video width="500" height="300" controls src={walkthrough}></video>
 
           {/* prototype design documentation */}
           <Typography
