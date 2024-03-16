@@ -17,7 +17,6 @@ function LightBulbIcon(props) {
   );
 }
 
-
 const gradientStyle = {
   background: `#8B0000`,
   border: "none",
@@ -65,13 +64,51 @@ export default function SceneFlow() {
             of time on the actual core gameplay because they wouldn’t have the
             option to continuously run back to a specific location. This would
             force the player to proceed forward and continue to explore what’s
-            ahead.
+            ahead. Some design questions we asked were the following:
+            <ul>
+              <li>
+                How much would the elevator play a role in how the player
+                transitions from one level to another?
+              </li>
+              <li>
+                How can the player’s failure be represented, and when/how can
+                the player respawn?
+              </li>
+              <li>
+                Which bits of level progress are preserved across leaving and
+                reentering a level/elevator?
+              </li>
+              <li>
+                Do we want the elevator to be the core game root or used as a
+                ‘side character’, purely for transitioning to other game
+                regions?
+              </li>
+            </ul>
+            Some knowledge we gained was the following:
+            <ul>
+              <li>
+                Through this scene flow prototype, we learned that we liked the
+                idea of having to find the next elevator to proceed to the next
+                level
+              </li>
+              <li>
+                We didn’t really like how restricting the player in not going
+                back to the starting elevator as a safe zone could possibly
+                cause the player to not be able to rest during the core gameplay
+              </li>
+
+              <li>
+                Other than providing a safe zone, this option would make the
+                gameplay much shorter in that the player would not need to
+                continuously run back to the starting elevator
+              </li>
+            </ul>
           </Typography>
         </CardContent>
         <CardActions>
           <Button
-          variant="contained"
-            sx={{ fontFamily: "Soul", textTransform: "none", }}
+            variant="contained"
+            sx={{ fontFamily: "Soul", textTransform: "none" }}
             style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/hJwAMEw4vAEteGg13QZVST/Scene-Flow-Prototype-1?type=whiteboard&node-id=0%3A1&t=e1mznuJ6DbGly71K-1"
@@ -124,13 +161,46 @@ export default function SceneFlow() {
             name is unique. In addition, by making the elevator the main game
             root, the gameplay experience might be more leisurely as the player
             can take their time exploring the levels and taking breaks when
-            needed.
+            needed. Some design questions we asked were the following:
+            <ul>
+              <li>
+                How can the player continuously use the elevator as a “safe
+                zone” without losing their game progress?
+              </li>
+              <li>
+                Will the elevator be used as a checkpoint for the player’s
+                progress? Or purely just a “break” in the game?
+              </li>
+              <li>
+                How will the elevator affect how long the player takes to
+                complete each level?
+              </li>
+            </ul>
+            Some knowledge we gained was the following:
+            <ul>
+              <li>
+                Through this scene flow, we learned that the elevator gave the
+                player a good opportunity to take a break and rest during the
+                gameplay.
+              </li>
+              <li>
+                However, based on how the game loop turned out, we realized that
+                having the elevator as the “main” game root might slow down the
+                gameplay entirely, causing player boredom as well.
+              </li>
+
+              <li>
+                We also learned that from a development perspective, using the
+                same elevator for transitioning to all the levels might be
+                easier instead of generating new assets each time.
+              </li>
+            </ul>
           </Typography>
         </CardContent>
         <CardActions>
           <Button
-          variant="contained"
-            sx={{ fontFamily: "Soul", textTransform: "none",}}
+            variant="contained"
+            sx={{ fontFamily: "Soul", textTransform: "none" }}
             style={gradientStyle}
             size="medium"
             href="https://www.figma.com/file/To9jX7TeacyNwx92G6ZzRV/Scene-Flow-Prototype-2?type=whiteboard&node-id=1%3A2&t=LZdU8L6tSAib1JnV-1"
