@@ -182,7 +182,10 @@ export default function App() {
           </Typography>
 
           {/* video walkthrough */}
-          <video width="500" height="300" controls src={walkthrough}></video>
+          <video width="500" height="300" controls>
+
+            <source src={walkthrough} type="video/mp4"></source>
+          </video>
 
           {/* prototype design documentation */}
           <Typography
