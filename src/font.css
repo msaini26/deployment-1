@@ -45,3 +45,13 @@
     font-family: 'Soul';
     src: url('./fonts/LTSoul-Regular.otf');
 }
+
+@font-face {
+    font-family: 'SoulMedium';
+    src: url('./fonts/LTSoul-Medium.otf');
+}
+
+@font-face {
+    font-family: 'SoulSemiBold';
+    src: url('./fonts/LTSoul-SemiBold.otf');
+}
